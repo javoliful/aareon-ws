@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "backoffice-host": "apps/backoffice-host",
-    "backoffice-host-e2e": "apps/backoffice-host-e2e"
+    "backoffice-host-e2e": "apps/backoffice-host-e2e",
+    "user-management": "apps/user-management",
+    "user-management-e2e": "apps/user-management-e2e"
   }
 }
