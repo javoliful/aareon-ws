@@ -3,8 +3,6 @@
   "version": 2,
   "projects": {
     "backoffice-host": "apps/backoffice-host",
-    "backoffice-host-e2e": "apps/backoffice-host-e2e",
-    "dashboard": "apps/dashboard",
-    "dashboard-e2e": "apps/dashboard-e2e"
+    "backoffice-host-e2e": "apps/backoffice-host-e2e"
   }
 }
