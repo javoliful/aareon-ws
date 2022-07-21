@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
  declarations: [AppComponent],
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
      path: '',
      loadChildren: () => import('./remote-entry/entry.module').then(m => m.RemoteEntryModule)
    }], { initialNavigation: 'enabledBlocking' }),
+   PagesModule,
  ],
  providers: [],
  bootstrap: [AppComponent],
