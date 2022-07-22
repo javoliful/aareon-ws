@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
    RouterModule.forRoot([{
      path: '',
      loadChildren: () => import('./remote-entry/entry.module').then(m => m.RemoteEntryModule)
-   }], { initialNavigation: 'enabledBlocking' }),
+   },
+     { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) }], { initialNavigation: 'enabledBlocking' }),
    
  ],
  providers: [],

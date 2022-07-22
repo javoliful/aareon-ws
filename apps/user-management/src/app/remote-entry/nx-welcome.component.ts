@@ -429,6 +429,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     </style>
     <div class="wrapper">
       <div class="container">
+        <ul class="remote-menu">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="pages">UserManagement</a></li>
+        </ul>
+
+
         <!--  WELCOME  -->
         <div id="welcome">
           <h1>
