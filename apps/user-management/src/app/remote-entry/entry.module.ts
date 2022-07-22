@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { RemoteEntryComponent } from './entry.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
+
 @NgModule({
   declarations: [RemoteEntryComponent, NxWelcomeComponent],
   imports: [
@@ -14,6 +15,8 @@ import { NxWelcomeComponent } from './nx-welcome.component';
         path: '',
         component: RemoteEntryComponent,
       },
+       {
+       path: 'pages', loadChildren: () => import('../pages/pages.module').then(m => m.PagesModule) }
     ]),
   ],
   providers: [],

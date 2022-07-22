@@ -9,10 +9,10 @@ import { AppComponent } from './app.component';
  imports: [
    BrowserModule,
    RouterModule.forRoot([{
-     path: '',
+     path: '',     
      loadChildren: () => import('./remote-entry/entry.module').then(m => m.RemoteEntryModule)
-   },
-     { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) }], { initialNavigation: 'enabledBlocking' }),
+   }
+    ], { initialNavigation: 'enabledBlocking' }),
    
  ],
  providers: [],
