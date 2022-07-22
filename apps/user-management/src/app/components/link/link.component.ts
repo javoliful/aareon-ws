@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinkComponent implements OnInit {
 
-  constructor() { }
+  constructor() {console.log("constructor link") }
 
   ngOnInit(): void {
+    console.log("constructor link") 
   }
 
 }
