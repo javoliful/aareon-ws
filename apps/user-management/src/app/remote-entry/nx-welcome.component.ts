@@ -431,7 +431,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
       <div class="container">
         <ul class="remote-menu">
           <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="pages">UserManagement</a></li>
+          <li><a routerLink="pages">UserManagement Pages</a></li>
         </ul>
 
 
