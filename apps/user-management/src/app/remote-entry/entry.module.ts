@@ -2,21 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { RemoteEntryComponent } from './entry.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
-
-
 @NgModule({
-  declarations: [RemoteEntryComponent, NxWelcomeComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
         path: '',
-        component: RemoteEntryComponent,
+        loadChildren: () =>
+          import('../pages/pages.module').then((m) => m.PagesModule),
       },
-       {
-       path: 'pages', loadChildren: () => import('../pages/pages.module').then(m => m.PagesModule) }
+
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('./../pages/login/login.module').then((m) => m.LoginModule),
+      },
     ]),
   ],
   providers: [],
