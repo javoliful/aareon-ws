@@ -17,6 +17,11 @@ import { ComponentsModule } from './components/components.module';
               (m) => m.RemoteEntryModule
             ),
         },
+        {
+          path: 'login',
+          loadChildren: () =>
+            import('./pages/login/login.module').then((m) => m.LoginModule),
+        },
       ],
       { initialNavigation: 'enabledBlocking' }
     ),

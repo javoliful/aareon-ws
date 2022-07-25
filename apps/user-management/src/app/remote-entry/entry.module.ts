@@ -12,12 +12,6 @@ import { RouterModule } from '@angular/router';
         loadChildren: () =>
           import('../pages/pages.module').then((m) => m.PagesModule),
       },
-
-      {
-        path: 'login',
-        loadChildren: () =>
-          import('./../pages/login/login.module').then((m) => m.LoginModule),
-      },
     ]),
   ],
   providers: [],
